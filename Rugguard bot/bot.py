@@ -71,12 +71,12 @@ class RugguardBot:
         status = self.get_bot_status()
         if status:
             self.logger.info("=" * 50)
-            self.logger.info("🛡️ RUGGUARD BOT STATUS")
+            self.logger.info("🛡 RUGGUARD BOT STATUS")
             self.logger.info("=" * 50)
-            self.logger.info(f"📊 Total Tweets Processed: {status['total_processed']}")
-            self.logger.info(f"🔍 Total Analyses Completed: {status['total_analysis']}")
-            self.logger.info(f"⏰ Recent Activity (24h): {status['recent_processed_24h']} processed, {status['recent_analysis_24h']} analyzed")
-            self.logger.info(f"🕐 Last Status Check: {status['last_check']}")
+            self.logger.info(f" Total Tweets Processed: {status['total_processed']}")
+            self.logger.info(f" Total Analyses Completed: {status['total_analysis']}")
+            self.logger.info(f" Recent Activity (24h): {status['recent_processed_24h']} processed, {status['recent_analysis_24h']} analyzed")
+            self.logger.info(f" Last Status Check: {status['last_check']}")
             self.logger.info("=" * 50)
     
     def is_tweet_processed(self, tweet_id):
