@@ -1,4 +1,4 @@
-# 🛡️ RUGGUARD Bot
+# 🛡 RUGGUARD Bot
 
 An X (Twitter) bot that analyzes account trustworthiness for the Solana ecosystem. When triggered with "riddle me this" in a reply, the bot analyzes the original tweet's author and provides a comprehensive trustworthiness report.
 
@@ -16,13 +16,13 @@ An X (Twitter) bot that analyzes account trustworthiness for the Solana ecosyste
 - **Rate Limit Handling**: Built-in rate limit management
 - **Replit Deployable**: Designed for easy deployment on Replit
 
-## 📋 Prerequisites
+##  Prerequisites
 
 1. **X Developer Account**: Sign up at https://developer.x.com
 2. **API Keys**: Get your API keys from the X Developer Portal
 3. **Python 3.8+**: Required for running the bot
 
-## 🛠️ Installation
+##  Installation
 
 ### Local Setup
 
@@ -95,7 +95,7 @@ The bot uses a trusted accounts list from:
 
 Accounts followed by 2+ trusted accounts receive higher trust scores.
 
-## 📊 Monitoring & Status
+##  Monitoring & Status
 
 ### Check if Bot is Running
 
@@ -204,7 +204,7 @@ grep "ERROR" rugguard_bot.log
 - ⚠️ Low engagement
 - ⚠️ Spam patterns
 
-## 🔒 Security & Privacy
+##  Security & Privacy
 
 - No sensitive data stored
 - Analysis based on public information only
@@ -220,9 +220,9 @@ grep "ERROR" rugguard_bot.log
 🟡 RUGGUARD ANALYSIS: @username
 Trust Level: MODERATE TRUST (65/100)
 
-📊 Account Age: 180 days
-👥 Followers: 1,250
-🤝 Trusted Connections: 1
+ Account Age: 180 days
+ Followers: 1,250
+ Trusted Connections: 1
 
 ⚠️ Risk Factors:
 • No verified status
@@ -266,7 +266,7 @@ Check `rugguard_bot.log` for detailed error information.
 ## 📞 Support
 
 For issues or questions:
-- Telegram: @devsyrem
+- Telegram: @joshehh
 - Create GitHub issue
 
 ## ⚖️ License
