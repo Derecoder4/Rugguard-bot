@@ -70,11 +70,11 @@ def check_bot_status():
         last_activity_str = last_activity[0] if last_activity else "Never"
         
         # Display status
-        print(f"📊 Total Tweets Processed: {total_processed}")
-        print(f"🔍 Total Analyses Completed: {total_analysis}")
-        print(f"🤝 Trusted Accounts Loaded: {trusted_count}")
-        print(f"⏰ Activity (Last 24h): {recent_processed} processed, {recent_analysis} analyzed")
-        print(f"🕐 Last Activity: {last_activity_str}")
+        print(f" Total Tweets Processed: {total_processed}")
+        print(f" Total Analyses Completed: {total_analysis}")
+        print(f" Trusted Accounts Loaded: {trusted_count}")
+        print(f" Activity (Last 24h): {recent_processed} processed, {recent_analysis} analyzed")
+        print(f" Last Activity: {last_activity_str}")
         
         # Check if bot seems active
         if last_activity:
@@ -108,7 +108,7 @@ def check_bot_status():
         return True
         
     except Exception as e:
-        print(f"❌ Error checking status: {e}")
+        print(f" Error checking status: {e}")
         return False
 
 def check_log_file():
@@ -131,7 +131,7 @@ def check_log_file():
                 print(line.strip())
                 
     except Exception as e:
-        print(f"❌ Error reading log file: {e}")
+        print(f" Error reading log file: {e}")
 
 def main():
     """Main status check function"""
@@ -146,11 +146,11 @@ def main():
     print("\n" + "=" * 50)
     
     if db_ok:
-        print("💡 To monitor real-time activity, check: rugguard_bot.log")
-        print("💡 To see if bot is running: ps aux | grep python")
+        print(" To monitor real-time activity, check: rugguard_bot.log")
+        print(" To see if bot is running: ps aux | grep python")
     else:
-        print("💡 Initialize the bot with: python scripts/setup_database.py")
-        print("💡 Start the bot with: python main.py")
+        print(" Initialize the bot with: python scripts/setup_database.py")
+        print(" Start the bot with: python main.py")
 
 if __name__ == "__main__":
     main()
